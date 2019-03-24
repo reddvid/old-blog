@@ -1,3 +1,82 @@
-baseURL = "http://example.org/"
+baseurl = "/"
 languageCode = "en-us"
 title = "Red David Blog"
+theme = "hello-friend-ng"
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+ 
+ [[params.social]]
+    name = "github"    
+    weight = 1
+    url = "https://github.com/reddvid/" 
+
+     [[params.social]]
+    name = "twitter"    
+    weight = 2
+    url = "https://twitter.com/reddvid/" 
+
+    [[params.social]]
+    name = "linkedin"    
+    weight = 3
+    url = "https://linkedin.com/in/reddvid/" 
+
+  # Metadata mostly used in document's head
+  description = "David Ballesteros blog"
+  keywords = "homepage, blog, tech, dev, development, programming"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+[languages]
+  [languages.en]
+    title = "Red David Blog"
+    subtitle = "WHat the"
+    keywords = ""
+    copyright = ""
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "red david"
+      logoHomeLink = "/"
+    # or
+    #
+     #   path = "/img/rd-grad-small.png"
+    # alt = "Your example logo alt text"
+
+	
+
+# And you can even create generic menu
+[menu]
+    [[menu.main]]
+        identifier = "blog"
+        title = "Blog"
+        name = "Blog"
+        url = "/posts"
+        weight = -3
+
+    [[menu.main]]
+        identifier = "apps"
+        name = "Apps"      
+        title = "Apps"
+        url = "/" 
+        weight = -2
+ 
+    [[menu.main]]
+        identifier = "about"     
+        title = "About"
+        name = "About"
+        url = "/"
+        weight = -1
+
+    [[menu.social]]
+        identifier = "facebook"
+        name = "facebook"
+        url = "https://facebook.com/reddvidapps"
+        weight = -5
+
